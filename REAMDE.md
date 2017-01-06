@@ -28,3 +28,8 @@ python poly.py
 * I strongly think that inheritance is not necessary between Polynomial, Term, and Variable.
 * Interesting recursive problem could present itself where exponents can also be polynomials.
  * Would require a new input format.
+* **Disucssion on dictionaries**:
+ * Makes is much easier to simplify like terms
+  * Hash the term ignoring constants, check whether it exists - constant time for simplification of like terms
+ * Lookup is constant time for terms and variables (ignoring time spent on hash), which cuts down time on any algebraic operation
+ 
